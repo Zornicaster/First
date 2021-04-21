@@ -4,8 +4,7 @@ modal.onclick = function() {
     if(this.style.display === 'block') {
        this.style.display = 'none' 
     }
-};
-
+}
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById("myImg");
@@ -13,8 +12,6 @@ var img2 = document.getElementById("id2");
 var img3 = document.getElementById("id3");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-
-
 
 function displayModal(src, desc) {
     modal.style.display = "block";
@@ -44,6 +41,8 @@ span.onclick = function() {
 function submitForm(){
     
     let subject = document.getElementById("subject");
-  
+
+    localStorage["myphotos"] = subject.value;
+
     alert("Thank you for voting!")
 }

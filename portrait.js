@@ -43,6 +43,14 @@ span.onclick = function() {
 function submitForm(){
     
     let subject = document.getElementById("subject");
-  
+
+    localStorage["portrait"] = subject.value;
+
+
     alert("Thank you for voting!")
+/*
+    localStorage.setItem("firstname", "Smith");
+    var name=localStorage.getItem("firstname");
+*/
+
 }
